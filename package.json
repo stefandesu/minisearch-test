@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "json-anystream": "^1.1.1",
+    "minisearch": "^5.0.0"
+  }
+}
