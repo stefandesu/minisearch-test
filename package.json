@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "json-anystream": "^1.1.1",
-    "minisearch": "^5.0.0"
+    "minisearch": "^5.0.0",
+    "typesense": "^1.4.2"
   }
 }
