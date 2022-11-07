@@ -81,10 +81,10 @@ const actions = {
     const schema = {
       name: collection,
       fields: [
-        { name: "identifier", type: "string[]", infix: true },
+        { name: "identifier", type: "string[]", infix: false },
         { name: "prefLabel", type: "string[]", infix: true },
         { name: "altLabel", type: "string[]", infix: true },
-        { name: "notes", type: "string[]", infix: true },
+        { name: "notes", type: "string[]", infix: false },
       ]
     }
     await client.collections().create(schema)
@@ -116,6 +116,7 @@ const actions = {
     const results = await client.collections(collection).documents().search({
       q: param,
       query_by: "identifier,prefLabel,altLabel,notes",
+      num_typos: "0,2,1,1",
       infix: "always",
       per_page: 250,
     })
