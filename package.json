@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "json-anystream": "^1.1.1",
+    "meilisearch": "^0.29.1",
     "minisearch": "^5.0.0"
   }
 }
